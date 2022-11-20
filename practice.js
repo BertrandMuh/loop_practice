@@ -98,9 +98,13 @@ for(lowerLimit; lowerLimit <= upperLimit; lowerLimit++){
 }
 
 // Write a loop with some “if else” statements. The loop should start at 1900 and go to 1949 and log when things were invented. For example when i = 1902 the code should log “it is 1902 - the teddy bear is invented!”
+lowerLimit = 1900;
+upperLimit = 1949;
+console.log(`Write a loop with some “if else” statements. The loop should start at ${lowerLimit} and go to ${upperLimit} and log when things were invented. For example when i = 1902 the code should log “it is 1902 - the teddy bear is invented!`);
+
 array = [['Zeppelin', 1900], ['Teddy Bear', 1902], ['Talking Motion Picture', 1910], ['Bra', 1913], ['Fortune Cookie', 1918], ['Traffic Signal', 1923], ['Radar', 1935], ['Ballpoint Pen', 1938], ['Slinky', 1943]];
 
-for(i = 1900; i <= 1949; i++){
+for(i = lowerLimit; i <= upperLimit; i++){
     array.forEach(invention => {
         if(i == invention[1]){
             console.log(`It is ${invention[1]} - the ${invention[0]} is invented`);
